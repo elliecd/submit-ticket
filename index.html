@@ -1,46 +1,12 @@
-<!DOCTYPE html>
-<html>
-
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="submit-ticket : HTML page to submit a ticket to EEI Footprints">
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>submit-ticket</title>
-  </head>
-
-  <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/elliecd/submit-ticket">View on GitHub</a>
-
-          <h1 id="project_title">submit-ticket</h1>
-          <h2 id="project_tagline">HTML page to submit a ticket to EEI Footprints</h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/elliecd/submit-ticket/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/elliecd/submit-ticket/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <p></p>
-
-Submit Ticket to IST EEI
-
-
-
-&lt;!--[if IE]&gt;
-&lt;![endif]--&gt;
-
-
+<HTML><head><meta http-equiv="x-ua-compatible" content="IE=EmulateIE9">
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf-8">
+<title>Submit Ticket to IST EEI</title><link type="text/css" rel="stylesheet" href="/tmp/css/base.css?VERSION=11.6.02-11">
+<link type="text/css" rel="stylesheet" href="/tmp/css/global.css?VERSION=11.6.02-11">
+<link type="text/css" rel="stylesheet" href="/tmp/css/bmc.css?VERSION=11.6.02-11">
+<link type="text/css" rel="stylesheet" href="/tmp/javascript/yui/build/fonts/fonts-min.css?VERSION=11.6.02-11">
+<!--[if IE]><link type="text/css" rel="stylesheet" href="/tmp/css/ie.css?VERSION=11.6.02-11">
+<![endif]--><script type="text/javascript" defer="defer" src="/tmp/javascript/ResizeDocument.js?VERSION=11.6.02-11"></script>
+<style type="text/css">
 
 
 /* FP VERSION: 11.6.02  */
@@ -572,7 +538,7 @@ div.button_pressed
 .x-window-ml,  .x-window-mr  { background: #006699 !important }
 .x-window-bc { background: #FFFFFF !important; border-bottom: 3px solid #006699 }
 
-/* to make the bottom, left &amp; right edges line up with our smaller corner images */
+/* to make the bottom, left & right edges line up with our smaller corner images */
 .x-window-ml { padding-left: 4px !important; }
 .x-window-mr { padding-right: 4px !important; }
 .x-window-bc .x-window-footer { padding-bottom: 3px !important; }
@@ -740,165 +706,195 @@ div.fieldGroupContent{
     
 }
 
+</style>
+<script type="text/javascript">
 
 
+function highlightButton(isOn, id)
+{
+    theEl = document.getElementById(id);
+    if (isOn)
+        theEl.className = "button_on";
+    else
+        theEl.className = "button_off";    
+}
+function mousedownButton(id)
+{
+    theEl = document.getElementById(id);
+    theEl.className = "button_pressed";
+}
+</script>
+</head><BODY bgcolor = "#FFFFFF">
+<FORM name = "HTML_FORM" METHOD=POST ACTION="https://footprints.berkeley.edu/MRcgi/MRProcessIncomingForms.pl">
+<BR>
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0  class = "dialog" width="100%">
+<tr class = "dialogHeading"><td><table border = "0" class = "dialogHeading"><tr><td class = "dialogTitle">
+Submit Ticket to IST EEI</td></tr></table></td></tr><tr><td>
+<font face=""Verdana, Arial, Helvetica, sans-serif"" size="-2" color = "#990000"> ** Mandatory fields are highlighted and preceded by an asterisk</font><p><B><FONT COLOR = "#990000">*Title:</FONT></B>
+<INPUT TYPE=TEXT NAME=TITLE SIZE=70 VALUE="" MAXLENGTH="250"><BR><BR>
+</SELECT></FONT><BR><BR>
+</TD>
+</TR>
+</TABLE>
+<BR><BR>
 
-
-<p></p>
-
-<br>
-
-<table border="0" cellpadding="0" cellspacing="0" width="100%">
-<tr><td><table border="0"><tr><td>
-Submit Ticket to IST EEI</td></tr></table></td></tr>
-<tr>
-<td>
- ** Mandatory fields are highlighted and preceded by an asterisk<p><b>*Title:</b>
-<br><br>
-<br><br>
-</p>
-</td>
-</tr>
-</table>
-
-<p><br><br></p>
-
-<table border="0" cellpadding="0" cellspacing="0" width="100%">
- <tr>
-  <td><table border="0"><tr><td>
-Ticket Information</td></tr></table></td>
-</tr>
-<tr><td>
-<br><table border="0">
-<tr>
-<th align="left">
-*Main Category
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 class = "dialog" width="100%">
+ <TR class = "dialogHeading">
+  <td><table border = "0" class = "dialogHeading"><tr><td class = "dialogTitle">
+Ticket Information</td></tr></table></td></tr>
+<tr><td class = "dialog"><br><table border=0><TR>
+<Th align = "left">
+<FONT COLOR = "#990000">*Main Category</font>
 </th>
-<td>
-Select Choice
-Accounts and Permissions
-Bomgar
-Endpoint Configuration
-Endpoint Imaging
-File Servers and Storage
-JACS Hardware
-Mac Imaging and Configuration
-Print Servers
-SecureAttach-Accellion
-Security
-TEM-BigFix
-Other Escalation
-<br>
-</td>
-
-</tr>
-</table>
-<br>
-</td></tr>
-</table><br><br><table border="0" cellpadding="0" cellspacing="0" width="100%">
- <tr>
-  <td><table border="0"><tr><td>
-Contact Information</td></tr></table></td>
-</tr>
-<tr><td>
-<br><table border="0">
-<tr>
-<th align="left">
-*Name (Last, First)
+<td><SELECT NAME="Main__bCategory" >
+<OPTION VALUE ="Select Choice" >Select Choice</OPTION>
+<OPTION VALUE ="Accounts and Permissions" >Accounts and Permissions</OPTION>
+<OPTION VALUE ="Bomgar" >Bomgar</OPTION>
+<OPTION VALUE ="Endpoint Configuration" >Endpoint Configuration</OPTION>
+<OPTION VALUE ="Endpoint Imaging" >Endpoint Imaging</OPTION>
+<OPTION VALUE ="File Servers and Storage" >File Servers and Storage</OPTION>
+<OPTION VALUE ="JACS Hardware" >JACS Hardware</OPTION>
+<OPTION VALUE ="Mac Imaging and Configuration" >Mac Imaging and Configuration</OPTION>
+<OPTION VALUE ="Print Servers" >Print Servers</OPTION>
+<OPTION VALUE ="SecureAttach-Accellion" >SecureAttach-Accellion</OPTION>
+<OPTION VALUE ="Security" >Security</OPTION>
+<OPTION VALUE ="TEM-BigFix" >TEM-BigFix</OPTION>
+<OPTION VALUE ="Other Escalation" >Other Escalation</OPTION>
+</SELECT></FONT><BR></td>
+</TD>
+</TR>
+</TABLE><br></td></tr></table></table><br><Br><TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 class = "dialog" width="100%">
+ <TR class = "dialogHeading">
+  <td><table border = "0" class = "dialogHeading"><tr><td class = "dialogTitle">
+Contact Information</td></tr></table></td></tr>
+<tr><td class = "dialog"><br><table border=0><TR>
+<Th align = "left">
+<FONT COLOR = "#990000">*Name (Last, First)</font>
 </th>
-<td><br></td>
+<td><INPUT NAME="Name__b__PLast__M__bFirst__p" SIZE="20" VALUE=""><BR></td>
 
-<th align="left">
-*Email Address
+<Th align = "left">
+<FONT COLOR = "#990000">*Email Address</font>
 </th>
-<td><br></td>
+<td><INPUT NAME="Email__bAddress" SIZE="20" VALUE=""><BR></td>
 
-<th align="left">
-*CalNetID
+<Th align = "left">
+<FONT COLOR = "#990000">*CalNetID</font>
 </th>
-<td><br></td>
+<td><INPUT NAME="CalNetID" SIZE="20" VALUE=""><BR></td>
+</TD>
+</TR>
 
-</tr>
-
-<tr>
-<th align="left">
-Phone
+<TR>
+<Th align = "left">
+Phone</font>
 </th>
-<td><br></td>
+<td><INPUT NAME="Phone" SIZE="20" VALUE=""><BR></td>
 
-<th align="left">
-Department
+<Th align = "left">
+Department</font>
 </th>
-<td><br></td>
+<td><INPUT NAME="Department" SIZE="20" VALUE=""><BR></td>
 
-<th align="left">
-Address
+<Th align = "left">
+Address</font>
 </th>
-<td><br></td>
+<td><INPUT NAME="Address" SIZE="20" VALUE=""><BR></td>
+</TD>
+</TR>
 
-</tr>
-
-<tr>
-<th align="left">
-Job Title
+<TR>
+<Th align = "left">
+Job Title</font>
 </th>
-<td><br></td>
+<td><INPUT NAME="Job__bTitle" SIZE="20" VALUE=""><BR></td>
 
-<th align="left">
-Home Department Code
+<Th align = "left">
+Home Department Code</font>
 </th>
-<td><br></td>
+<td><INPUT NAME="Home__bDepartment__bCode" SIZE="20" VALUE=""><BR></td>
 
-<th align="left">
-Home Department Name
+<Th align = "left">
+Home Department Name</font>
 </th>
-<td><br></td>
+<td><INPUT NAME="Home__bDepartment__bName" SIZE="20" VALUE=""><BR></td>
+</TD>
+</TR>
 
-</tr>
+</TD>
+</TR>
+</TABLE><br></td></tr></table></table><br><Br>
+    <script language = "javascript">
+    var emailField = 'Email__bAddress';
+    var userPriv = 1;
+    var abFields = new Array("Name__b__PLast__M__bFirst__p","Email__bAddress","CalNetID","Phone","Department","Address","Job__bTitle","Home__bDepartment__bCode","Home__bDepartment__bName");
+    function SubmitIt()
+    {
+        var errorMsg = "";
 
+                    if (!(document.HTML_FORM.TITLE.value))
+                        errorMsg += "The field TITLE is mandatory and has been left blank\n";
 
+                    if (document.HTML_FORM.Main__bCategory.options[0].selected == 1)
+                        errorMsg += "The field Main Category is mandatory and has been left blank\n";
 
-</table>
-<br>
-</td></tr>
-</table><br><br>
-    <table border="0" cellpadding="0" cellspacing="0" width="100%">
- <tr><td><table border="0"><tr><td>
-Description</td></tr></table></td></tr>
-<tr><td>
-<br>  <br><br><br>
-</td></tr>
-</table> 
-            <br> 
+                    if (!(document.HTML_FORM.Name__b__PLast__M__bFirst__p.value))
+                        errorMsg += "The field Name (Last, First) is mandatory and has been left blank\n";
 
-<p>
+                    if (!(document.HTML_FORM.Email__bAddress.value))
+                        errorMsg += "The field Email Address is mandatory and has been left blank\n";
 
+                    if (!(document.HTML_FORM.CalNetID.value))
+                        errorMsg += "The field CalNetID is mandatory and has been left blank\n";
 
-
-
-<br>Click the SUBMIT button to send your Request.  There is no need to reply to this email.  You will receive an email confirmation if your Request is successfully registered.  Please contact <a href="mailto:ar@berkeley.edu">ar@berkeley.edu</a> if you experience problems using this form.<br> Be sure to click the submit button only once. A separate Ticket will be entered each time the button is clicked.</p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">submit-ticket maintained by <a href="https://github.com/elliecd">elliecd</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-              <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("UA-57563115-1");
-            pageTracker._trackPageview();
-            } catch(err) {}
-          </script>
-
-
-  </body>
-</html>
+        if (errorMsg)
+        {
+            alert(errorMsg);
+        }
+        else
+        {
+            if (document.HTML_FORM.ANONYMOUS)
+                if (document.HTML_FORM.ANONYMOUS.checked)
+                    AnonymousSurvey();
+            if (emailField != '')
+            {
+                if (userPriv <= 1)
+                {
+                    //Leo26293: don't replace FROM, it should already contain correct value
+                    //eval('document.HTML_FORM.FROM.value = document.HTML_FORM.' + emailField + '.value;');
+                }
+            }
+            document.HTML_FORM.submit();
+        }
+    }
+    function AnonymousSurvey()
+    {
+        for (i = 0; i <= abFields.length; i++)
+        {
+            if (eval('document.HTML_FORM.' + abFields[i]))
+            {
+                eval('document.HTML_FORM.' + abFields[i] + '.value = ""');
+            }
+        }
+        if (document.HTML_FORM.Original__bProject)
+            document.HTML_FORM.Original__bProject.value = "Anonymous";
+        if (document.HTML_FORM.Original__bIssue)
+            document.HTML_FORM.Original__bIssue.value = "0";
+        if (document.HTML_FORM.Original__bAssignees)
+            document.HTML_FORM.Original__bAssignees.value = "Anonymous";
+        if (document.HTML_FORM.originalticket)
+            document.HTML_FORM.originalticket.value = 0;
+        document.HTML_FORM.TITLE.value = "Survey Results";
+    }
+    </script><TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 class = "dialog" width="100%">
+ <TR class = "dialogHeading"><td><table border = "0" class = "dialogHeading"><tr><td class = "dialogTitle">
+Description</td></tr></table></td></tr><tr><td><BR>&nbsp;&nbsp;<TEXTAREA NAME=LONGDESCRIPTION ROWS=10 COLS=85 WRAP=HARD></TEXTAREA><BR><BR><BR>
+</td></tr></table><INPUT TYPE = "button" VALUE="Submit Ticket"
+            onClick = "javascript:SubmitIt()"> <font color = "#990000" face = ""Verdana, Arial, Helvetica, sans-serif"">
+            </FONT><BR></td></tr><tr><td>&nbsp;</td></tr></table>
+<INPUT TYPE=HIDDEN NAME="TO" VALUE="eei-help@berkeley.edu">
+<INPUT TYPE=HIDDEN NAME="FROM" VALUE="elliecd@berkeley.edu">
+<input type = "hidden" name = "PROJECTNUM" value = "184">
+<input type = "hidden" name = "PROJECTNAME" value = "IST EEI">
+<input name = "DATE_TYPE" type = "hidden" value = "0">
+<br><font color = "#006699">Click the SUBMIT button to send your Request.  There is no need to reply to this email.  You will receive an email confirmation if your Request is successfully registered.  Please contact ar@berkeley.edu if you experience problems using this form.</font><BR><font color = "#990000" face = "Verdana, Arial, Helvetica, sans-serif"> Be sure to click the submit button only once. A separate Ticket will be entered each time the button is clicked.</font></FORM></BODY></HTML>
